@@ -15,10 +15,11 @@ namespace BowlingGroup2.Models
         {
             this.Name = name;
         }
-
+        
         public void AddScore(int frame, int roundScore)
         {
             Scores.Insert(frame, roundScore);
+        
         }
 
     }
