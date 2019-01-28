@@ -46,15 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SetUpView.cs">
+    <Compile Include="Views\PlayerBoard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SetUpView.Designer.cs">
+    <Compile Include="Views\PlayerBoard.Designer.cs">
+      <DependentUpon>PlayerBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SetUpView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SetUpView.Designer.cs">
       <DependentUpon>SetUpView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="SetUpView.resx">
+    <EmbeddedResource Include="Views\PlayerBoard.resx">
+      <DependentUpon>PlayerBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SetUpView.resx">
       <DependentUpon>SetUpView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
