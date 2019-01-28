@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.player1Scoreboard = new System.Windows.Forms.ListBox();
-            this.player2Scoreboard = new System.Windows.Forms.ListBox();
             this.player1RollBtn = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.player2RollBtn = new System.Windows.Forms.Button();
+            this.player2Scoreboard = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -49,6 +49,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Player 1 Scoring";
             // 
+            // player1Scoreboard
+            // 
+            this.player1Scoreboard.FormattingEnabled = true;
+            this.player1Scoreboard.Location = new System.Drawing.Point(7, 20);
+            this.player1Scoreboard.Name = "player1Scoreboard";
+            this.player1Scoreboard.Size = new System.Drawing.Size(120, 95);
+            this.player1Scoreboard.TabIndex = 0;
+            // 
+            // player1RollBtn
+            // 
+            this.player1RollBtn.Location = new System.Drawing.Point(182, 19);
+            this.player1RollBtn.Name = "player1RollBtn";
+            this.player1RollBtn.Size = new System.Drawing.Size(75, 95);
+            this.player1RollBtn.TabIndex = 12;
+            this.player1RollBtn.Text = "Roll";
+            this.player1RollBtn.UseVisualStyleBackColor = true;
+            this.player1RollBtn.Click += new System.EventHandler(this.player1RollBtn_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.player2RollBtn);
@@ -60,31 +78,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Player 2 Scoring";
             // 
-            // player1Scoreboard
-            // 
-            this.player1Scoreboard.FormattingEnabled = true;
-            this.player1Scoreboard.Location = new System.Drawing.Point(7, 20);
-            this.player1Scoreboard.Name = "player1Scoreboard";
-            this.player1Scoreboard.Size = new System.Drawing.Size(120, 95);
-            this.player1Scoreboard.TabIndex = 0;
-            // 
-            // player2Scoreboard
-            // 
-            this.player2Scoreboard.FormattingEnabled = true;
-            this.player2Scoreboard.Location = new System.Drawing.Point(7, 20);
-            this.player2Scoreboard.Name = "player2Scoreboard";
-            this.player2Scoreboard.Size = new System.Drawing.Size(120, 95);
-            this.player2Scoreboard.TabIndex = 0;
-            // 
-            // player1RollBtn
-            // 
-            this.player1RollBtn.Location = new System.Drawing.Point(182, 19);
-            this.player1RollBtn.Name = "player1RollBtn";
-            this.player1RollBtn.Size = new System.Drawing.Size(75, 95);
-            this.player1RollBtn.TabIndex = 12;
-            this.player1RollBtn.Text = "Roll";
-            this.player1RollBtn.UseVisualStyleBackColor = true;
-            // 
             // player2RollBtn
             // 
             this.player2RollBtn.Location = new System.Drawing.Point(182, 19);
@@ -94,6 +87,14 @@
             this.player2RollBtn.Text = "Roll";
             this.player2RollBtn.UseVisualStyleBackColor = true;
             this.player2RollBtn.Click += new System.EventHandler(this.player2RollBtn_Click);
+            // 
+            // player2Scoreboard
+            // 
+            this.player2Scoreboard.FormattingEnabled = true;
+            this.player2Scoreboard.Location = new System.Drawing.Point(7, 20);
+            this.player2Scoreboard.Name = "player2Scoreboard";
+            this.player2Scoreboard.Size = new System.Drawing.Size(120, 95);
+            this.player2Scoreboard.TabIndex = 0;
             // 
             // PlayerBoard
             // 

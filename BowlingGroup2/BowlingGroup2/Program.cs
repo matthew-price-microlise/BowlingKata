@@ -12,6 +12,10 @@ namespace BowlingGroup2
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// 
+
+        //static List<Player> players = new List<Player>();
+        
         [STAThread]
         static void Main()
         {
@@ -19,9 +23,12 @@ namespace BowlingGroup2
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new SetUpView());
 
+            Player player = new Player("Dave");
+
+
             for (int i = 0; i < 10; i++)
             {
-                Player.addScore(i, Frame());
+                player.AddScore(i, Frame());
             }
 
         }

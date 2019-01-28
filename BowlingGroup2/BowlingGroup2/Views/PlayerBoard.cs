@@ -21,5 +21,10 @@ namespace BowlingGroup2.Views
         {
 
         }
+
+        private void player1RollBtn_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
